@@ -13,6 +13,13 @@ const Home = () => {
                 backgroundColor: 'rgba(17,17,17,0.9)'
             },
             content: {
+                width: '60%',
+                top: '50%',
+                left: '50%',
+                right: 'auto',
+                bottom: 'auto',
+                marginRight: '-50%',
+                transform: 'translate(-50%, -50%)',
                 background: 'rgba(52,58,64,0.9)'
             }
         }
@@ -24,8 +31,8 @@ const Home = () => {
                 <img className="home__image" src="https://images.unsplash.com/photo-1482775907821-a56ec43344fc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1352&q=80" alt="" />
                 <Modal isOpen={modalOpen} {...styleHandle}>
                     <div className="modal">
-                        <h1>This is a demo web app so payments are disabled, or use 42424242424242 for all card details.
-                        Thanks for your understanding</h1>
+                        <h1>This is a demo web app so payments are disabled,  you can check the code to see the payment method.
+                        Thanks for your understanding.</h1>
 
                         <button onClick={() => setModalOpen(false)} >CLOSE</button>
                     </div>

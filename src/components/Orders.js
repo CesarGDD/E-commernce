@@ -30,6 +30,7 @@ const Orders = () => {
         <div className="orders" >
             <h1>Your orders</h1>
             <div className="orders__order">
+                {orders.length === 0 ? <h2>YOU DONT'T HAVE ORDERS YET</h2> : null }
                 {orders?.map(order => (
                     <Order order={order} />
                 ))}
